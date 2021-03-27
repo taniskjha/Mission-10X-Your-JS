@@ -6,7 +6,7 @@ Forget all your worries, you have landed on the Repository that will cover all t
 
 This interview preparation guide includes all the major concepts of JavaScript language that will help you to crack your upcoming JavaScript interview. 
 
-## 1. What are the Some ways to create objects in JavaScript??
+## 1. [What are the Some ways to create objects in JavaScript??](#)
 
 **My connecting** flight to Bangalore was delayed by 5  hours, and i was sitting in New Delhi airport, lazily watching the hustle and bustle of passengers.
 
@@ -90,7 +90,7 @@ var pilotWife = Object.create(null);
 
 Learn More at [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
-## 2. What is prototypal Inheritance??
+## 2. [What is prototypal Inheritance?](#)
 
 
 A lot of inheritance blog on internet uses all kinds of crazy examples with trees and babies to make you understand inheritance. I think it’s better just to directly say what inheritance does :-
@@ -260,7 +260,7 @@ var newPass = new PrintMyPassport("I am a new Object and I can print your passpo
 newPass.print(); //I am a new Object and I can print.
 ```
 
-## 3 - What's the diffrence between Var vs Let vs Const ? 
+## 3 - [What's the diffrence between Var vs Let vs Const ? ](#)
 
 
 
