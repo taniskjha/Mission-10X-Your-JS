@@ -262,7 +262,7 @@ newPass.print(); //I am a new Object and I can print.
 
 ## 3 - [What's the diffrence between Var vs Let vs Const ? ](#)
 
-Variable declaraed using var keyword inside the function is available throughout that function as well as to nested function, see example below
+Variable declared using var keyword inside the function is available throughout that function as well as to nested function, see example below
 
 ```javascript
 function multiplyNum() {
@@ -282,7 +282,7 @@ multiplyNum()
 // output for both multiply with or without captain will be 600 and 60, and that's the reason it's called function scoped
 ```
 
-Variable declaraed using const keyword inside the function is available only to that function, see example below
+Variable declared using const keyword inside the function is available only to that function, see example below
 
 ```javascript
 function multiplyNum() {
