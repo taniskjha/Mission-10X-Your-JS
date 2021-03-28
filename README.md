@@ -262,13 +262,46 @@ newPass.print(); //I am a new Object and I can print.
 
 ## 3 - [What's the diffrence between Var vs Let vs Const ? ](#)
 
+Variable declaraed using var keyword inside the function is available throughout that function as well as to nested function, see example below
 
+```javascript
+function multiplyNum() {
+     var a = 20
+     var b = 30
+     var captain = true
 
+     if(captain) {
+       var multiply = a * b
+       console.log('multiply with captain',multiply )
+     }
 
+     console.log('multiply without captain',multiply )
+}
 
+multiplyNum()
+// output for both multiply with or without captain will be 600 and 60, and that's the reason it's called function scoped
+```
 
+Variable declaraed using const keyword inside the function is available only to that function, see example below
 
+```javascript
+function multiplyNum() {
+     const a = 20
+     const b = 30
+     const captain = true
 
+     if(captain) {
+       const multiply = a * b
+       console.log('multiply with captain',multiply )
+     }
 
+     console.log('multiply without captain',multiply )
+}
+
+multiplyNum()
+// output for multiply with captain will be 600 but multiply without captain will throw an error called sum is not defined, and that's the reason it's called block scoped
+```
+
+Variable declared using let keyword behaves same wrt. scope, only diffrence is all const declarations must be intialized and once initialized you cannot reassign to a new value.
 
 
