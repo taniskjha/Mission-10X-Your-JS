@@ -304,7 +304,7 @@ multiplyNum()
 
 Variable declared using let keyword behaves same wrt. scope, only diffrence is all const declarations must be intialized and once initialized you cannot reassign to a new value.
 
-## 3 - [What's the JavaScript Scope ? ](#)
+## 4 - [What's the JavaScript Scope ? ](#)
 
 "In layman’s term, it simply means where a variable is sitting in your code. In addition to that, scope also specifies whether you have access to the variable or not.
 
@@ -337,5 +337,27 @@ console.log(buffet);
 // No we can't, Expected Output = buffet is not defined
 ```
 
+## 5 - [What's the JavaScript Closure ? ](#)
 
+In JavaScript, closures are created every time a function is returned from another function.
+
+And when we return a function from another function, we actually returning the function bundled with it's lexical environment, and this bundle is called closure.
+
+We’re going to write a bit of code that will show the power of closures. And then we’ll understand what’s really going on under the hood.
+
+```javascript
+// I'm gonna go ahead and create my good old ola function that returns another function
+
+​function outer() {
+  let counter = 0;
+  return function inner() {
+    counter++;
+    console.log(counter);
+  };
+}
+
+const fn = outer();
+fn(); // output - 1
+fn(); // output - 2  (it still had the access of lexical environment )
+```
 
