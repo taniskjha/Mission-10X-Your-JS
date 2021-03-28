@@ -387,3 +387,8 @@ multiplyIt(4)(6)(3); // 72
 
 Currying is possible because of closure, when we return a function from another function we return with it's lexical environment, so it always takes outer function scope arguments into consideration
 
+## 7 - [What's the diffrence between load event and DOMContentLoaded event ? ](#)
+
+The DOMContentLoaded event fires when all the nodes in the page have been constructed in the DOM tree. The load event fires when all resources such as images and sub-frames are loaded completely.
+
+
