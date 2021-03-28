@@ -343,7 +343,7 @@ In JavaScript, closures are created every time a function is returned from anoth
 
 And when we return a function from another function, we actually returning the function bundled with it's lexical environment, and this bundle is called closure.
 
-We’re going to write a bit of code that will show the power of closures. And then we’ll understand what’s really going on under the hood.
+We’re going to write a bit of code that will show the power of closures. 
 
 ```javascript
 // I'm gonna go ahead and create my good old ola function that returns another function
@@ -360,4 +360,30 @@ const fn = outer();
 fn(); // output - 1
 fn(); // output - 2  (it still had the access of lexical environment )
 ```
+
+## 6 - [What's the Function Currying ? ](#)
+
+Currying is a technique to evaluate many arguments into sequence of just 1 argument, see example Below.
+
+```javascript
+//No currying
+function multiplyIt(a, b, c) {
+  return a * b * c;
+}
+
+multiplyIt(4, 6, 3); // 72
+
+//Currying
+function multiplyIt(a) {
+  return function(b) {
+    return function(c) {
+      return a * b* c;
+    }
+  }
+}
+
+multiplyIt(4)(6)(3); // 72
+```
+
+Currying is possible because of closure, when we return a function from another function we return with it's lexical environment, so it always takes outer function scope arguments into consideration
 
