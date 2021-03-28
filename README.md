@@ -304,4 +304,38 @@ multiplyNum()
 
 Variable declared using let keyword behaves same wrt. scope, only diffrence is all const declarations must be intialized and once initialized you cannot reassign to a new value.
 
+## 3 - [What's the JavaScript Scope ? ](#)
+
+"In layman’s term, it simply means where a variable is sitting in your code. In addition to that, scope also specifies whether you have access to the variable or not.
+
+Basically, there are two types of scopes in JavaScript, global scope and Functional scope.
+
+Global Scope: When a variable is sitting outside of a function. (Note- Entire application can access global scope) "
+
+
+```javascript
+// Declare a Global variable buffet
+​
+var buffet = "I'm sitting outside of function";
+​
+//Find out if we can Access the global variable buffet inside functionBezos
+​
+function functionBezos() {
+  console.log(buffet);
+}
+functionBezos();
+// Yes we can, Expected Output = "I'm sitting outside of function"
+```
+
+"Funtional Scope: When a Variable is sitting inside a function (Note- It can only be accessed from within the function.)"
+
+```javascript
+function functionBezos() {
+   var buffet = "sitting inside function";  
+}
+console.log(buffet);  
+// No we can't, Expected Output = buffet is not defined
+```
+
+
 
