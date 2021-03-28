@@ -279,7 +279,7 @@ function multiplyNum() {
 }
 
 multiplyNum()
-// output for both multiply with or without captain will be 600 and 60, and that's the reason it's called function scoped
+// output for both multiply with or without captain will be 600 and 600, and that's the reason it's called function scoped
 ```
 
 Variable declared using const keyword inside the function is available only to that function, see example below
